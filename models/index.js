@@ -1,4 +1,4 @@
-const Pet = require('./Project');
+const Pet = require('./Pet');
 const User = require('./User');
 
 User.hasMany(Pet, {
@@ -9,5 +9,6 @@ User.hasMany(Pet, {
 Pet.belongsTo(User, {
   foreignKey: 'user_id'
 });
+
 
 module.exports = { User, Pet };

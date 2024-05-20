@@ -1,0 +1,58 @@
+<div class="center">
+    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+    <label for="file" style="cursor: pointer;">Upload Pet Image</label>
+    <img id="output" width="200" />
+</div>
+
+
+<div class="card" id="pet-table-partial" type="text/x-handlebars-template">
+  <table class="table">
+    <thead >
+      <tr class = "tbord">
+        <th>Name</th>
+        <td>{{name}}</td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>{{type}}</td>
+      </tr>
+      <tr class = "tbord2">
+      <th>Breed</th>
+      <td>{{breed}}</td>
+      </tr>
+<tr >
+      <th>Birthdate</th>
+      <td>{{format_date birthdate}}</td>
+      </tr>
+<tr class = "tbord2">
+      <th>Weight</th>
+      <td>{{weight}}</td>
+</tr >
+
+<tr >
+      <th>Gender</th>
+      <td>{{gender}}</td>
+</tr>
+<tr class = "tbord2">
+      <th>Altered</th>
+      <td>{{#if altered}}Yes{{else}}No{{/if}}</td>
+</tr>
+<tr >
+      <th>Microchip</th>
+      <td>{{microchip}}</td>
+</tr>
+<tr class = "tbord2">
+      <th>Vaccinations</th>
+      <td>{{vaccinations}}</td>
+</tr>
+<tr >
+      <th>Allergies</th>
+      <td>{{allergies}}</td>
+</tr>
+
+      
+    </thead>
+    
+    </tbody>
+  </table>
+</div>

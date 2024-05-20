@@ -1,128 +1,109 @@
-# project-2
 
-# 15 Project 2: Interactive Full-Stack Application
+=======
+# FurFile
+[![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en) 
+[![Mysql Badge](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://nodejs.org/en) 
+[![Express Badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+[![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://www.heroku.com/)  
+## Description
 
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
 
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+Anyone that has pets knows that they are part of the family. So having their medical records should be important to us. Furfile allows users to track and update their pet’s information online. Just sign in to FurFile and input the information. Each FurFile profile displays the following pet information: 
+- Name
+- Type (cat or dog)
+- Breed
+- Birthdate
+- Weight
+- Gender
+- Spayed/Neutered
+- Microchip #
+- Vaccinations
+- Allergies
+  
+The motivation behind this application was our love for pets and animals. If there ever was an emergency with our pets and our veterinarian’s office was closed, it would be very difficult to access some of this information. Not everyone has their pet’s records on file. Furfile will allow pet owners, veterinarians, and anyone that could need your pet’s information to have access. This could be the difference in saving a pet’s life.
 
-## Project Requirements
+As users, we want an application to keep track of pet data that can be accessed online.
+As users, we want to be able to sign in or create a new account.
+As registered users, we want a page that can input and edit personal pet information.
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+## Table of Contents
 
-* Use Node.js and Express.js to create a RESTful API.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-* Use Handlebars.js as the template engine.
+## Installation
 
-* Use MySQL and the Sequelize ORM for the database.
+Visit: https://immense-taiga-25334-d6b01512dabc.herokuapp.com/
 
-* Have both GET and POST routes for retrieving and adding new data.
+## Usage
 
-* Use at least one new library, package, or technology that we haven’t discussed.
+To use this application click on the given heroku link. It will then take you to the homepage. Click on signup button on the navigation bar. Then it will ask the name, email and password. After sign up you can fill the form and click on add pet, it will add your pet and will show your pets information. You can follow the screenshots below.
 
-* Have a folder structure that meets the MVC paradigm.
+1. The main homepage.
 
-* Include authentication (express-session and cookies).
+![Homepage image of the application.](./assets/screenshots/screenshot-1.png)
 
-* Protect API keys and sensitive information with environment variables.
+2. Signup page.
 
-* Be deployed using Heroku (with data).
+![Signup page image of the application.](./assets/screenshots/screenshot-2.png)
 
-* Have a polished UI.
+3. Add a pet page.
+![Pets Information image of the application.](./assets/screenshots/screenshot-3.png)
 
-* Be responsive.
+4. Pet details page.
+![Pets details image of the application.](./assets/screenshots/screenshot-4.png)
 
-* Be interactive (i.e., accept and respond to user input).
 
-* Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+## Credits
+Contributors:
+Reginald Griffin: https://github.com/CntrolldSbstnce
+Isaac Mckoy: https://github.com/IJmckoy0820
+Jin Choe: https://github.com/jinkc21
+Juju Nakarmi: https://github.com/Jujunakarmi
+Anngrace Blount: https://github.com/silvernotshell
 
-* Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+Documentation for express handlebars helped design the views:
+https://www.npmjs.com/package/express-handlebars
 
-## Presentation Requirements
+Express session official readme helped create the sessions:
+https://github.com/expressjs/session#cookie
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
+Sequelize documentation helped with associations:
+https://sequelize.org/master/manual/assocs.html
 
-* Elevator pitch: a one minute description of your application
+Place.dog was used to generate dog images:
+https://place.dog/
 
-* Concept: What is your user story? What was your motivation for development?
+Cataas was used to generate cat images:
+https://cataas.com/
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+Bulma.io was used for the image carousel:
+https://wikiki.github.io/components/carousel/
 
-* Demo: Show your stuff!
+## License
 
-* Directions for Future Development
+MIT License
 
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
+Copyright (c) 2024 jinkc21
 
-## Grading Requirements
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This project is graded based on the following criteria:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Technical Acceptance Criteria: 25%
-
-* Satisfies the following code requirements:
-
-  * Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
-
-  * Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
-
-  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
-
-  * Application includes user authentication (express-session and cookies).
-
-  * Application uses at least one new library, package, or technology not covered in class.
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using a slide deck.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Full-Stack Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
